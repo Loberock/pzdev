@@ -2,7 +2,7 @@ import Footer from "./core/Footer";
 import Navbar from "./core/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Hero from "./pages/HERO";
+import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Testimonials from "./pages/Testimonials";

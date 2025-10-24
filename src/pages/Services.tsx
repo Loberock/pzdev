@@ -30,42 +30,125 @@ function Services() {
           digital.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          <article className="bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-            <h3>✨ Landing Page Profesional</h3>
-            <p>
-              Cautiva a tus clientes con una página moderna, optimizada y
-              enfocada en resultados. Ideal para promociones, productos o
-              campañas publicitarias.
-            </p>
-            <span>Desde $150</span>
-            <a href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Landing%Page%Profesional">
-              🚀 Crear mi Landing
-            </a>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          <article className="group relative flex flex-col justify-between bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:border-white/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+            {/* Fondo animado de gradiente sutil */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-linear-to-br from-[#171C70]/10 via-[#157E91]/5 to-[#12E0B2]/10 blur-2xl"></div>
+
+            {/* Contenido principal */}
+            <div className="relative z-10">
+              <h3 className="text-xl font-bold text-[#E6EDF3] mb-4">
+                ✨ Landing Page Profesional
+              </h3>
+
+              <p className="text-sm text-[#9BA3B0] leading-relaxed mb-6">
+                Cautiva a tus clientes con una página moderna, optimizada y
+                enfocada en resultados. Ideal para promociones, productos o
+                campañas publicitarias.
+              </p>
+            </div>
+
+            {/* Footer con precio y botón */}
+            <div className="relative z-10 flex items-center justify-between mt-auto">
+              <span className="text-base font-semibold text-[#E6EDF3]">
+                Desde <span className="text-[#12E0B2]">$150</span>
+              </span>
+
+              <a
+                className="text-sm font-semibold text-white px-4 py-2 rounded-full bg-linear-to-r from-[#171C70] via-[#194F80] to-[#1C9399] hover:shadow-lg hover:shadow-[#12E0B2]/30 transition-all duration-300"
+                href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Landing%Page%Profesional"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🚀 Crear mi Landing
+              </a>
+            </div>
+
+            {/* Brillo decorativo al pasar el mouse */}
+            <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition duration-700">
+              <div className="absolute -inset-1 bg-linear-to-r from-[#171C70]/40 via-[#12E0B2]/40 to-[#12E0B2]/20 rounded-2xl blur-3xl animate-pulse"></div>
+            </div>
           </article>
-          <article className="bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-            <h3>🏢 Sitio Web Corporativo</h3>
-            <p>
-              Proyecta una imagen sólida y profesional con un sitio web que
-              refleje tu identidad empresarial. Diseño elegante, adaptable y
-              fácil de administrar.
-            </p>
-            <span>Desde $300</span>
-            <a href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Sitio%Web%Corporativo">
-              🌐 Diseñar mi Web
-            </a>
+
+          <article className="flex flex-col justify-between bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:border-white/30 hover:-translate-y-1.5 transition-all duration-300">
+            <div>
+              <h3 className="text-xl font-bold text-[#E6EDF3] mb-4">
+                Landing Page Profesional
+              </h3>
+              <p className="text-sm text-[#9BA3B0] mb-4">
+                Cautiva a tus clientes con una página moderna, optimizada y
+                enfocada en resultados. Ideal para promociones, productos o
+                campañas publicitarias.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <span className="text-base font-semibold text-[#E6EDF3]">
+                Desde $150
+              </span>
+              <a
+                className="text-sm font-semibold text-[#E6EDF3] px-4 py-2 rounded-full bg-linear-to-r from-[#171C70] via-[#194F80] to-[#1C9399]"
+                href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Landing%Page%Profesional"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🚀 Crear mi Landing
+              </a>
+            </div>
           </article>
-          <article className="bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-            <h3>🛒 Tienda Online (E-commerce)</h3>
-            <p>
-              Lanza tu tienda virtual y empieza a vender 24/7. Carrito, pagos
-              integrados, panel de control y diseño personalizado para impulsar
-              tus ventas online.
-            </p>
-            <span>Desde $800</span>
-            <a href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Tienda%Online">
-              🛒 Lanzar mi Tienda
-            </a>
+
+          <article className="flex flex-col justify-between bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:border-white/30 hover:-translate-y-1.5 transition-all duration-300">
+            <div>
+              <h3 className="text-xl font-bold text-[#E6EDF3] mb-4">
+                🏢 Sitio Web Corporativo
+              </h3>
+              <p className="text-sm text-[#9BA3B0] mb-4">
+                Proyecta una imagen sólida y profesional con un sitio web que
+                refleje tu identidad empresarial. Diseño elegante, adaptable y
+                fácil de administrar.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <span className="text-base font-semibold text-[#E6EDF3]">
+                Desde $300
+              </span>
+              <a
+                className="text-sm font-semibold text-[#E6EDF3] px-4 py-2 rounded-full bg-linear-to-r from-[#171C70] via-[#194F80] to-[#1C9399]"
+                href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Sitio%Web%Corporativo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🌐 Diseñar mi Web
+              </a>
+            </div>
+          </article>
+
+          <article className="flex flex-col justify-between bg-white/5 backdrop:blur-xl p-6 rounded-xl border border-white/10 hover:border-white/30 hover:-translate-y-1.5 transition-all duration-300">
+            <div>
+              <h3 className="text-xl font-bold text-[#E6EDF3] mb-4">
+                🛒 Tienda Online (E-commerce)
+              </h3>
+              <p className="text-sm text-[#9BA3B0] mb-4">
+                Lanza tu tienda virtual y empieza a vender 24/7. Carrito, pagos
+                integrados, panel de control y diseño personalizado para
+                impulsar tus ventas online.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <span className="text-base font-semibold text-[#E6EDF3]">
+                Desde $800
+              </span>
+              <a
+                className="text-sm font-semibold text-[#E6EDF3] px-4 py-2 rounded-full bg-linear-to-r from-[#171C70] via-[#194F80] to-[#1C9399]"
+                href="https://wa.me/+51933738449?text=Hola%estoy%interesado%en&%el%servicio%de%Tienda%Online"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🛒 Lanzar mi Tienda
+              </a>
+            </div>
           </article>
         </div>
       </div>
